@@ -18,6 +18,9 @@
  -  Promocodes have code, uses, max uses, discount amount, start date, expiry date, and creator, where creator carries the Admin.User_ID of the admin whom created the promocode. 
  -  Admins have Salary and Branch along with a user ID connecting them with the rest of their data from table Accounts.
 ## ERD
+
+![ERD](https://github.com/mostafa7arafa/UBER_Like_Application/assets/58299212/88be2040-2b35-4450-9e6f-defda572dca7)
+
 ## Brief
 - Within the UBER-like application we have designed, we ensured to include most essential features that would help make the application functional on a next step. 
 The main three tables are indeed Clients, Drivers, and Trips, but a few more tables are needed to complete the project, such as tables Cars, Accounts, Cards, Promocodes, and Admins. 
@@ -31,6 +34,9 @@ The main three tables are indeed Clients, Drivers, and Trips, but a few more tab
 - The Promocodes table stores all the promocodes added by the Admins, each promocode has a Code (PK), Uses (number of times used), Max_Uses (the max number of times this promocode can be used before deactivated), Discount_Amount (how much money will be deducted from the trip cost, Creator (FK to Admins.User_ID), Starts_at (date), and Expires_at (date). 
 - The Admins table includes the necessary data needed to register a new Admin staff member. Admins have the right to create Promocodes, view a list of Drivers, Clients, Trips, and see all their data through the interface that will be made. The Admins can also see the Ratings of the Drivers and Clients, and start calling the ones with poor ratings to encourage them to do better, or apply bonus commissions to the Drivers which prove good ratings. The Admins table includes the attributes of User_ID (PK and is used as FK in table Promocodes to identify the creator of each promocode, Salary, and Branch (the name of the company’s branch that this staff member is working from).
 ## Relational Mapping
+
+![Relational Mapping](https://github.com/mostafa7arafa/UBER_Like_Application/assets/58299212/5b8ae551-de1b-4484-b49a-551b83cc47df)
+
 ## Relational Schema
  - **Accounts**(User_ID(**PK**), First_Name, Last_Name, Password, Mobile_No, Email, Occupation)
  - **Drivers**(User_ID(**PK**), License_Plate(FK), Driver_Rating, Drivers_License, Total_Rides)
